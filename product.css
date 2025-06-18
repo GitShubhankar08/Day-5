@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header, .product-info, .features, .testimonials, footer {
+  padding: 40px 20px;
+  text-align: center;
+}
+.product-info img {
+  border-radius: 12px;
+  transition: transform 0.5s;
+}
+.product-info img:hover {
+  transform: rotate(90deg);
+}
+.features ul {
+  list-style: none;
+}
+
+.features li {
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+
+.features li:hover {
+  color: #0077cc;
+}
+footer {
+  background-color: #222;
+  color: #eee;
+}
+.testimonials blockquote {
+  font-style: italic;
+  margin: 20px auto;
+  max-width: 600px;
+  transition: opacity 0.3s;
+}
+
+.testimonials blockquote:hover {
+  opacity: 0.7;
+}
+@media (min-width: 768px) {
+  .product-info, .features, .testimonials {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .features ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .features li {
+    flex: 1;
+  }
+}
